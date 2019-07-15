@@ -1,3 +1,4 @@
+require "pry"
 class Doctor
 @@all = []
 attr_accessor :name, :appointment, :patient
@@ -10,6 +11,7 @@ attr_accessor :name, :appointment, :patient
   end
   
   def new_appointment(patient, date)
+    binding.pry
     Appointment.new(patient, self, date)
   end
 
