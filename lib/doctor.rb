@@ -10,9 +10,9 @@ attr_accessor :name
    @@all
   end
   
-  def new_appointment(date, patient)
+  def new_appointment(patient, date)
     binding.pry
-    Appointment.new(date, self, patient)
+    Appointment.new(patient, self, date)
   end
 
   def appointments
